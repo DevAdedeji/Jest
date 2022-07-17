@@ -50,6 +50,16 @@ const sum = require("./sum")
 //             'diapers', 'kleenex', 'trash bags', 'paper towels', 'milk'
 //         ]
 //         expect(shoppingLists).toContain('milk')
-//     })
-   
+//     })  
 // })
+
+function compileAndroidCode(){
+    throw new Error("You are using the wrong JDK")
+}
+
+describe("exceptions", ()=>{
+    it("compiling android code", ()=>{
+        expect(()=> compileAndroidCode()).toThrow("ou are using the wrong JDK")
+    })
+})
+
