@@ -35,3 +35,10 @@ const sum = require("./sum")
 //         expect(value).toBeCloseTo(0.29)
 //     })
 // })
+
+describe("strings", ()=>{
+    it("There is no I in team", ()=>{
+        const string = "team"
+        expect(string).not.toMatch(/I/)
+    })
+})
