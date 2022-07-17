@@ -1,5 +1,14 @@
 let animals = ['elephant', 'zebra', 'bear', 'tiger']
 
+
+describe("animals array", ()=>{
+
+
+beforeAll(()=>{
+    console.log("Animals assigned");
+    animals = ['elephant', 'zebra', 'bear', 'tiger']
+})
+
 beforeEach(()=>{
     console.log("BEFORE EACH TEST");
     animals = ['elephant', 'zebra', 'bear', 'tiger']
@@ -9,7 +18,11 @@ afterEach(()=>{
     console.log("AFTER EACH TEST");
 })
 
-describe("animals array", ()=>{
+afterAll(()=>{
+    console.log("After All");
+})
+
+
     it("Should add animal to end of array", ()=>{
         
         animals.push("alligator")
@@ -25,3 +38,7 @@ describe("animals array", ()=>{
         expect(animals.length).toBe(4)
     })
 })
+
+describe('tesing something else', () => { it.only("true should be truthy", ()=>{
+    expect(true).toBeTruthy()
+}) })
