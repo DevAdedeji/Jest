@@ -5,6 +5,10 @@ beforeEach(()=>{
     animals = ['elephant', 'zebra', 'bear', 'tiger']
 })
 
+afterEach(()=>{
+    console.log("AFTER EACH TEST");
+})
+
 describe("animals array", ()=>{
     it("Should add animal to end of array", ()=>{
         
