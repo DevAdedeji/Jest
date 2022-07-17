@@ -36,9 +36,20 @@ const sum = require("./sum")
 //     })
 // })
 
-describe("strings", ()=>{
-    it("There is no I in team", ()=>{
-        const string = "team"
-        expect(string).not.toMatch(/I/)
-    })
-})
+// describe("strings", ()=>{
+//     it("There is no I in team", ()=>{
+//         const string = "team"
+//         expect(string).not.toMatch(/I/)
+//     })
+// })
+
+
+// describe("arays", ()=>{
+//     it("List should contain milk", ()=>{
+//         const shoppingLists = [
+//             'diapers', 'kleenex', 'trash bags', 'paper towels', 'milk'
+//         ]
+//         expect(shoppingLists).toContain('milk')
+//     })
+   
+// })
