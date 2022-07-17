@@ -53,13 +53,13 @@ const sum = require("./sum")
 //     })  
 // })
 
-function compileAndroidCode(){
-    throw new Error("You are using the wrong JDK")
-}
+// function compileAndroidCode(){
+//     throw new Error("You are using the wrong JDK")
+// }
 
-describe("exceptions", ()=>{
-    it("compiling android code", ()=>{
-        expect(()=> compileAndroidCode()).toThrow("ou are using the wrong JDK")
-    })
-})
+// describe("exceptions", ()=>{
+//     it("compiling android code", ()=>{
+//         expect(()=> compileAndroidCode()).toThrow("ou are using the wrong JDK")
+//     })
+// })
 
